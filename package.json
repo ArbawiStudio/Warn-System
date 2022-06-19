@@ -1,0 +1,25 @@
+{
+  "name": "warn-system",
+  "version": "1.0.0",
+  "description": "Developed by TOBZi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArbawiStudio/Warn-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArbawiStudio/Warn-System/issues"
+  },
+  "homepage": "https://github.com/ArbawiStudio/Warn-System#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "discord.js": "^13.8.0",
+    "express": "^4.18.1",
+    "quick.db": "^7.1.3"
+  }
+}
