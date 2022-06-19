@@ -6,10 +6,9 @@ const db = require('quick.db')
 const chalk = require('chalk')
 
 var Config = {
-    Token: "OTg2Mjc1NTE5ODM2MzMyMDYz.Gm-F0j.QlthMOGzrCbYNHkv3-3PuZ76YzpUHH717S2JJM",
-    Prefix: "!",
-    StaffRoleID: "928725218338426940",
-    MaxWarns: "2"
+    Token: "",
+    Prefix: "",
+    StaffRoleID: ""
 }
 
 TOBZiClient.on('ready', async() => {
@@ -89,8 +88,6 @@ TOBZiClient.on('messageCreate', async TOBZiCoder => {
 })
 
 TOBZiClient.on('guildMemberAdd', async Member => {
-    const Warns = await db.get(`Warn_${Member.guild.id}_${Member.id}`)
-    if(Warns === Config.MaxWarns) return Member.ban()
     const Role = await db.get(`MuteRole_${Member.guild.id}`)
     if(db.get(`Warn_${Member.guild.id}_${Member.id}`)) {
         Member.roles.add(Role)
