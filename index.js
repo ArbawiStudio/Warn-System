@@ -29,7 +29,7 @@ TOBZiClient.on('messageCreate', async TOBZiCoder => {
            .addField(`**${Config.Prefix}set-muterole <@Mute Role>**`, `Set a Mute Role`, true)
            .addField(`**${Config.Prefix}set-logchannel <#Channel>**`, `Set Log Channel`, true)
            .addField(`**${Config.Prefix}warn**`, `For Warn a Member`)
-           .addField(`**${Config.Prefix}warns**`, `View the Warns of Member`, true)
+           .addField(`**${Config.Prefix}show-warns**`, `View the Warns of Member`, true)
            .addField(`**${Config.Prefix}delete-warns**`, `Delete All Warns from a User`, true)
            .setFooter(`Requested by ${TOBZiCoder.author.tag}`, TOBZiCoder.author.displayAvatarURL())
         TOBZiCoder.channel.send({ embeds: [EMBED] })
